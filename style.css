@@ -1,0 +1,505 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+/* reset css */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+}
+
+button:focus,
+button:active,
+input:active,
+input:focus,
+textarea:focus,
+textarea:active {
+  outline: none;
+  box-shadow: none;
+}
+
+ol,
+ul,
+li {
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2b292d;
+  letter-spacing: -0.01em;
+}
+
+section {
+  padding: 80px 0;
+}
+
+.section-category {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  margin-bottom: 8px;
+}
+
+.section-title {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.05882353;
+  letter-spacing: -0.03em;
+  color: #2b292d;
+  margin-bottom: 24px;
+}
+
+.section-desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+  color: #2b292d;
+}
+
+/* landing */
+
+.landing {
+  background-color: #fdded8;
+  text-align: center;
+}
+
+.landing-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.landing-title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  margin-bottom: 24px;
+}
+
+.landing-desc {
+  margin-bottom: 24px;
+}
+
+.fill-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 48px;
+  border-radius: 2px;
+  background-color: #3040c4;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: -0.05em;
+  color: #fff;
+}
+
+.landing fill-button:first-child {
+  margin-right: 8px;
+}
+
+.landing .button-group .inverted {
+  background-color: #fff;
+  color: #3040c4;
+}
+
+/* service */
+
+.service {
+  background-color: #f4f5f7;
+  padding: 80px 0;
+}
+
+.service-title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.36363636;
+  letter-spacing: -0.04em;
+  color: #2b292d;
+  margin-bottom: 16px;
+}
+
+.service .col-12:first-child {
+  margin-bottom: 40px;
+}
+
+/* program */
+
+.program strong {
+  display: block;
+  margin-bottom: 8px;
+  color: #009b4d;
+}
+
+.program .row:first-child {
+  margin-bottom: 32px;
+}
+
+.program .row:last-child .col-md-4 {
+  margin-bottom: 20px;
+}
+
+.program .row:last-child .col-md-4:last-child {
+  margin-bottom: 0;
+}
+
+.program-card {
+  display: block;
+  padding: 24px 0 32px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+    inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+  transition: background-color 300ms ease-in-out, box-shadow 300ms ease-in-out;
+}
+
+.program-card img {
+  display: block;
+  width: auto;
+  height: 195px;
+  text-align: center;
+  margin: 24px auto 16px;
+}
+
+.program-card h2 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.33333333;
+  letter-spacing: -0.02em;
+  color: #2b292d;
+  transition: color 500ms ease-in-out;
+}
+
+.program-card:hover,
+.program-card:active {
+  background-color: #3141c5;
+  box-shadow: 0px 13px 18px rgba(0, 0, 0, 0.15),
+    0px 11px 55px rgba(0, 0, 0, 0.07);
+}
+
+.program-card:hover h2,
+.program-card:active h2 {
+  color: #fff;
+}
+
+/*curriculum */
+.curriculum .section-category {
+  display: block;
+  margin-bottom: 8px;
+  color: #0189d1;
+}
+
+.curriculum-image {
+  display: none;
+}
+
+.curriculum-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.curriculum .section-desc {
+  margin-bottom: 32px;
+}
+
+.curriculum .row:first-child {
+  margin-bottom: 48px;
+}
+
+.curriculum .row:last-child .col-12:first-child {
+  margin-bottom: 40px;
+}
+
+.curriculum-detail {
+  font-size: 15px;
+  line-height: 1.46666667;
+  letter-spacing: -0.01em;
+  color: #2b292d;
+}
+
+/* subscription */
+
+.subscription {
+  padding: 40px 0;
+  background-color: #f2f8fa;
+  text-align: center;
+}
+
+.subscription-image {
+  padding: 25px 0;
+  margin-bottom: 16px;
+}
+
+.subscription-image img {
+  display: block;
+  width: auto;
+  height: 190px;
+  margin: 0 auto;
+}
+
+.subscription-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  color: #2b292d;
+  margin-bottom: 16px;
+}
+
+.subscription-desc {
+  margin-bottom: 24px;
+}
+
+.subscription .input-group input:focus {
+  border-color: rgba(1, 137, 209, 0.5);
+}
+
+.subscription .input-group input {
+  padding: 12px 16px;
+  width: 100%;
+  height: 48px;
+  margin-bottom: 8px;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  color: #7b7b7e;
+  transition: border-color 250ms ease-in-out;
+}
+
+.subscription .fill-button {
+  box-shadow: none;
+  border: none;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.subscription-mics {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.53846154;
+  color: #7b7b7e;
+}
+
+.subscription-mics a {
+  color: #3040c4;
+  text-decoration: underline;
+}
+
+/* footer */
+.footer {
+  padding: 24px 0;
+}
+
+.footer-link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71428571;
+  letter-spacing: -0.01em;
+  color: #807f81;
+  margin-bottom: 8px;
+}
+
+.footer-link:last-child {
+  margin-bottom: 0;
+}
+
+/* >= 768px */
+@media screen and (min-width: 768px) {
+  /* reset css */
+  p {
+    font-size: 22px;
+    line-height: 1.36363636;
+  }
+
+  .section-category {
+    font-size: 22px;
+    line-height: 1.09090909;
+  }
+
+  .section-title {
+    font-size: 56px;
+    line-height: 1;
+  }
+
+  .section-desc {
+    font-size: 22px;
+    line-height: 1.45454545;
+  }
+
+  /* landing */
+
+  .landing-content {
+    height: auto;
+    padding: 120px 0;
+  }
+
+  .landing-title {
+    font-size: 70px;
+    line-height: 1.02857142;
+    margin-bottom: 32px;
+  }
+
+  .landing-desc {
+    font-size: 22px;
+    line-height: 1.45454545;
+    margin-bottom: 32px;
+  }
+
+  .fill-button {
+    width: 160px;
+    height: 56px;
+    font-size: 18px;
+    line-height: 1.55555555;
+  }
+
+  .landing fill-button:first-child {
+    margin-right: 16px;
+  }
+
+  /* service */
+
+  .service-title {
+    font-size: 26px;
+    line-height: 1.30769231;
+  }
+
+  .service .col-12:first-child {
+    margin-bottom: 0;
+  }
+
+  /* program */
+  .program .row:first-child {
+    margin-bottom: 72px;
+  }
+
+  .program .row:last-child .col-md-4 {
+    margin-bottom: 20px;
+  }
+
+  .program-card h2 {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  /*curriculum */
+  .curriculum-image {
+    display: block;
+  }
+
+  .curriculum .section-desc {
+    margin-bottom: 72px;
+  }
+
+  .curriculum .row:first-child {
+    margin-bottom: 24px;
+  }
+
+  .curriculum .row:last-child .col-12:first-child {
+    margin-bottom: 0;
+  }
+
+  .curriculum-detail {
+    font-size: 18px;
+    line-height: 1.44444444;
+  }
+
+  .subscription {
+    padding: 80px 0;
+    text-align: left;
+  }
+
+  .subscription-image img {
+    height: 300px;
+    margin-left: 0;
+  }
+
+  .subscription-title {
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
+
+  .subscription-desc {
+    font-size: 22px;
+    line-height: 1.45454545;
+    margin-bottom: 24px;
+  }
+
+  .subscription .input-group {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 4px;
+  }
+
+  .subscription .input-group form {
+    display: inline-flex;
+  }
+
+  .subscription .input-group input {
+    width: 362px;
+    height: 56px;
+    font-size: 18px;
+    line-height: 1.33333333;
+    margin-right: 8px;
+    margin-bottom: 0;
+  }
+
+  .subscription .input-group .fill-button {
+    flex-shrink: 0;
+    width: 160px;
+    margin-bottom: 0;
+  }
+
+  .subscription-mics {
+    font-size: 14px;
+    line-height: 1.71428571;
+  }
+
+  /* footer */
+  .footer {
+    padding: 16px;
+  }
+
+  .footer-links {
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-link {
+    margin-right: 16px;
+    margin-bottom: 0;
+  }
+
+  .footer-link:last-child {
+    margin-right: 0;
+  }
+}
+
+/* custom grid system - fix container width */
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 960px !important;
+  }
+}
